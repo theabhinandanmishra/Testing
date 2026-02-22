@@ -20,10 +20,13 @@
         </ul>
     </nav>
 </header>
-
+<script>
+    const year = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = year;
+</script>
 <section class="hero">
   <div class="overlay">
-    <h1>शारदीय नवरात्रोत्सव 2025</h1>
+   <h1>शारदीय नवरात्रोत्सव <span id="currentYear"></span></h1>
     <p>नवरात्रोत्सव व विजयादशमीच्या मंगलमय शुभेच्छा</p>
     <a href="#contact" class="btn">Join Celebration</a>
   </div>
@@ -60,3 +63,10 @@
 
 </body>
 </html>
+<footer>
+    <p>© <span id="year"></span> Maa Jeevdani Seva Sangh</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
